@@ -8,5 +8,5 @@ setup(
     license='MIT',
     author='javisenberg',
     description='edx powered ApiBackend',
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
 )
