@@ -1,7 +1,7 @@
 # EdX Analytics Logger
 
 Simple yet powerful OpenEdX plugin to send event tracking logs to a remote 
-service in order to stpre additional information about user activity to perform
+service in order to store additional information about user activity to perform
 analytic research.
 
 
