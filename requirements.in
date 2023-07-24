@@ -1,3 +1,6 @@
-requests
-pre-commit
-flake8
+requests==2.31.0
+autopep8==2.0.2
+pre-commit==3.3.2
+flake8==6.0.0
+flake8-isort==6.0.0
+black==23.3.0

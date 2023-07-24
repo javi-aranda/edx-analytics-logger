@@ -23,17 +23,27 @@ settings files.
    TRACKING_BACKENDS['api'] = {
        'ENGINE': 'edx_analytics_logger.api.ApiBackend',
        'OPTIONS': {
-           'endpoint': <FILL_WITH_AN_URI>,
-           'token': <FILL_WITH_AN_AUTHORIZATION_TOKEN>,
-       }
+        'http_method': 'POST'
+        'endpoint': '<FILL_WITH_AN_URI>',
+        'headers': {
+            'Content-type': 'application/json',
+            'Authorization': 'Token <FILL_WITH_A_TOKEN>',
+            # ...
+            }
+        }
    }
 
    EVENT_TRACKING_BACKENDS['tracking_logs']['OPTIONS']['backends']['api'] = {
        'ENGINE': 'edx_analytics_logger.api.ApiBackend',
        'OPTIONS': {
-           'endpoint': <FILL_WITH_AN_URI>,
-           'token': <FILL_WITH_AN_AUTHORIZATION_TOKEN>,
-       }
+        'http_method': 'POST'
+        'endpoint': '<FILL_WITH_AN_URI>',
+        'headers': {
+            'Content-type': 'application/json',
+            'Authorization': 'Token <FILL_WITH_A_TOKEN>',
+            # ...
+            }
+        }
    }
 
 This could be accomplished by writing a custom plugin to add these settings in
