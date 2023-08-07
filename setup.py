@@ -5,7 +5,7 @@ with open('requirements/requirements.txt') as f:
 
 setup(
     name='edx-analytics-logger',
-    version='1.1.4',
+    version='1.2.0',
     packages=['edx_analytics_logger'],
     url='https://github.com/javi-aranda/edx-analytics-logger',
     license='MIT',
