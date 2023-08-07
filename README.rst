@@ -1,3 +1,8 @@
+.. image:: https://badge.fury.io/py/edx-analytics-logger.svg
+    :target: https://badge.fury.io/py/edx-analytics-logger
+
+.. image:: https://codecov.io/gh/javi-aranda/edx-analytics-logger/branch/master/graph/badge.svg 
+    :target: https://codecov.io/gh/javi-aranda/edx-analytics-logger
 
 EdX Analytics Logger
 ====================

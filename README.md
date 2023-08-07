@@ -1,3 +1,7 @@
+[![PyPI version](https://badge.fury.io/py/edx-analytics-logger.svg)](https://badge.fury.io/py/edx-analytics-logger)
+[![codecov](https://codecov.io/gh/javi-aranda/edx-analytics-logger/branch/master/graph/badge.svg)](https://codecov.io/gh/javi-aranda/edx-analytics-logger)
+
+
 # EdX Analytics Logger
 
 Simple yet powerful OpenEdX plugin to send event tracking logs to a remote 
