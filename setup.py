@@ -4,7 +4,7 @@ setup(
     name='edx-analytics-logger',
     version='1.1.4',
     packages=['edx_analytics_logger'],
-    url='https://github.com/javisenberg/edx-analytics-logger',
+    url='https://github.com/javi-aranda/edx-analytics-logger',
     license='MIT',
     author='javisenberg',
     description='edx powered ApiBackend',
