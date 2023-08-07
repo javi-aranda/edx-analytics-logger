@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='edx-analytics-logger',
-    version='1.2.0',
+    version='1.2.1',
     packages=['edx_analytics_logger'],
     url='https://github.com/javi-aranda/edx-analytics-logger',
     license='MIT',
