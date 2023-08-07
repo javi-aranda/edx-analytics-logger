@@ -1,8 +1,5 @@
 from setuptools import setup
 
-with open('requirements/requirements.txt') as f:
-    install_requires = f.read().splitlines()
-
 setup(
     name='edx-analytics-logger',
     version='1.2.0',
@@ -12,5 +9,8 @@ setup(
     author='javisenberg',
     description='edx powered ApiBackend',
     long_description=open('README.rst').read(),
-    install_requires=install_requires,
+    install_requires=[
+        'celery',
+        'requests',
+    ]
 )
