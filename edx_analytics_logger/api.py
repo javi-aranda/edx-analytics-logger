@@ -17,10 +17,11 @@ def send_event_tracking_log(http_method: str, event_str: str, endpoint: str, hea
     r = requests.request(http_method, endpoint, data=event_str, headers=headers)
     try:
         r.raise_for_status()
-    except Exception as e:
-        # Log the error to be able to debug, then raise again exception
+    except requests.exceptions.RequestException as e:
         logger.exception("Received %s status code. Text: %s", r.status_code, r.text)
-        logger.exception(e)
+        raise e
+    except Exception as e:
+        logger.exception("Unexpected error: %s", e)
         raise e
 
 
